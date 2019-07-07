@@ -7,7 +7,7 @@ app = Flask(__name__)
 api = Api(app)
 
 app_settings = os.getenv('APP_SETTINGS')
-app.config.from_object(app_settings)
+app.config.from_object(app_settings) 
 
 db = SQLAlchemy(app)
 
